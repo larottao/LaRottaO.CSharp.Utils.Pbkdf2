@@ -35,8 +35,20 @@ namespace LaRottaO.CSharp.Pbkdf2
             return new Tuple<String, String>(hashedResult, saltResult);
         }
 
-        public Boolean checkIfPasswordIsCorrect(String argStoredHash, String argStoredSalt, String argClearTextToCheck)
+        public Boolean checkIfPasswordIsCorrect(String argStoredHash, String argStoredSalt, String argClearTextToCheck, Boolean tryConvertingSaltToBase64First = false)
         {
+            /*******************************************************************/
+            //   //Some passwords generated with Java's PBKDF2WithHmacSHA512
+            //   are not recognized as correct unless the salt string comes
+            //   as base64 UTF-8
+            /*******************************************************************/
+
+            if (tryConvertingSaltToBase64First)
+            {
+                byte[] bytesToEncode = Encoding.UTF8.GetBytes(argStoredSalt);
+                argStoredSalt = Convert.ToBase64String(bytesToEncode);
+            }
+
             byte[] saltByteArray = Convert.FromBase64String(argStoredSalt);
 
             string hashed = Convert.ToBase64String(KeyDerivation.Pbkdf2(
@@ -46,7 +58,14 @@ namespace LaRottaO.CSharp.Pbkdf2
                 iterationCount: 65536,
                 numBytesRequested: 512 / 8));
 
-            return argStoredHash.Equals(hashed);
+            if (!argStoredHash.Equals(hashed) && !tryConvertingSaltToBase64First)
+            {
+                return checkIfPasswordIsCorrect(argStoredHash, argStoredSalt, argClearTextToCheck, true);
+            }
+            else
+            {
+                return argStoredHash.Equals(hashed);
+            }
         }
     }
 }
