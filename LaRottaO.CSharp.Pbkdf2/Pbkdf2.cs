@@ -35,7 +35,8 @@ namespace LaRottaO.CSharp.Pbkdf2
             return new Tuple<String, String>(hashedResult, saltResult);
         }
 
-        public Boolean checkIfPasswordIsCorrect(String argStoredHash, String argStoredSalt, String argClearTextToCheck, Boolean tryConvertingSaltToBase64First = false)
+        public Boolean checkIfPasswordIsCorrect(String argStoredHash, String argStoredSalt, String argClearTextToCheck,
+            Boolean tryConvertingSaltToBase64First = false)
         {
             /*******************************************************************/
             //   //Some passwords generated with Java's PBKDF2WithHmacSHA512
