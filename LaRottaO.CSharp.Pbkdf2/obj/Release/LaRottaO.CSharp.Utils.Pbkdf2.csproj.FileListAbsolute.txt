@@ -1,0 +1,11 @@
+C:\Repositorios\LaRottaO.CSharp.Utils.Pbkdf2\LaRottaO.CSharp.Pbkdf2\bin\Release\LaRottaO.CSharp.Utils.Pbkdf2.dll
+C:\Repositorios\LaRottaO.CSharp.Utils.Pbkdf2\LaRottaO.CSharp.Pbkdf2\bin\Release\LaRottaO.CSharp.Utils.Pbkdf2.pdb
+C:\Repositorios\LaRottaO.CSharp.Utils.Pbkdf2\LaRottaO.CSharp.Pbkdf2\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Repositorios\LaRottaO.CSharp.Utils.Pbkdf2\LaRottaO.CSharp.Pbkdf2\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Repositorios\LaRottaO.CSharp.Utils.Pbkdf2\LaRottaO.CSharp.Pbkdf2\bin\Release\Microsoft.AspNetCore.Cryptography.Internal.xml
+C:\Repositorios\LaRottaO.CSharp.Utils.Pbkdf2\LaRottaO.CSharp.Pbkdf2\bin\Release\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+C:\Repositorios\LaRottaO.CSharp.Utils.Pbkdf2\LaRottaO.CSharp.Pbkdf2\obj\Release\LaRottaO.CSharp.Utils.Pbkdf2.csproj.AssemblyReference.cache
+C:\Repositorios\LaRottaO.CSharp.Utils.Pbkdf2\LaRottaO.CSharp.Pbkdf2\obj\Release\LaRottaO.CSharp.Utils.Pbkdf2.csproj.CoreCompileInputs.cache
+C:\Repositorios\LaRottaO.CSharp.Utils.Pbkdf2\LaRottaO.CSharp.Pbkdf2\obj\Release\LaRottaO.CSharp.Utils.Pbkdf2.csproj.CopyComplete
+C:\Repositorios\LaRottaO.CSharp.Utils.Pbkdf2\LaRottaO.CSharp.Pbkdf2\obj\Release\LaRottaO.CSharp.Utils.Pbkdf2.dll
+C:\Repositorios\LaRottaO.CSharp.Utils.Pbkdf2\LaRottaO.CSharp.Pbkdf2\obj\Release\LaRottaO.CSharp.Utils.Pbkdf2.pdb
